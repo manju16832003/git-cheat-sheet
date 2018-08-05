@@ -1,4 +1,4 @@
-# git-cheat-sheet
+# GIT cheat sheet
 
 Git Cheat Sheet
 
