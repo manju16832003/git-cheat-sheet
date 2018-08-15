@@ -114,3 +114,25 @@ git config user.email "youremail@something.com"
 // then run the following command to take effect of last commit with new author name
 git commit --amend --reset-author
 ```
+
+## Git commit to an existing tag
+
+```
+1) Create a branch with the tag
+	git branch {tagname}-branch {tagname}
+	git checkout {tagname}-branch
+
+2) Include the fix manually if it's just a change .... 
+	git add .
+	git ci -m "Fix included"
+    or cherry-pick the commit, whatever is easier
+	git cherry-pick  {num_commit}
+	
+3) Delete and recreate the tag locally
+	git tag -d {tagname}
+	git tag {tagname}
+
+4) Delete and recreate the tag remotely
+	git push origin :{tagname} // deletes original remote tag
+	git push origin {tagname} // creates new remote tag
+```
