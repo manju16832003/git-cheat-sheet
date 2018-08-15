@@ -103,3 +103,14 @@ Everything up-to-date
 $ git pull
 Already up-to-date.
 ```
+
+## Resetting Author name
+
+```
+// first set the config 
+git config user.name "Manjunath Reddy"
+git config user.email "manju16832003@gmail.com"
+
+// then run the following command to take effect of last commit with new author name
+git commit --amend --reset-author
+```
