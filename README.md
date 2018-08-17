@@ -136,3 +136,15 @@ git commit --amend --reset-author
 	git push origin :{tagname} // deletes original remote tag
 	git push origin {tagname} // creates new remote tag
 ```
+
+### Git Partial Commit
+
+if you come across the error
+
+`fatal: cannot do a partial commit during a merge.`
+
+Do the following
+
+`git commit -i <filename>` or `git commit -i .`
+
+`-i` -> Stage additional files before committing.
