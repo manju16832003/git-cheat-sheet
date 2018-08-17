@@ -145,6 +145,4 @@ if you come across the error
 
 Do the following
 
-`git commit -i <filename>` or `git commit -i .`
-
-`-i` -> Stage additional files before committing.
+`git commit -i <filename>` or `git commit -i .` // -i is to Stage additional files before comitting.
